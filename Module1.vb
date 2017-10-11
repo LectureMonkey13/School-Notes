@@ -64,4 +64,39 @@
 
         Console.ReadKey()
     End Sub
+    Sub Part7()
+        Dim yourName As String
+        Dim yearBorn As Integer
+
+        Console.Write("Enter your name: ")
+        yourName = Console.ReadLine()
+        Console.Write("Enter the year you where born: ")
+        yearBorn = Console.ReadLine()
+        If (yearBorn > 1999) Then 'Start of If statement
+            Console.WriteLine(yourName)
+            Console.WriteLine("You were born in the 21st century")
+            Console.ReadKey()
+        Else ' only if first staement = false
+            Console.WriteLine(yourName)
+            Console.WriteLine("You where born in the 20th century")
+            Console.ReadKey()
+        End If
+
+    End Sub
+    Sub Part8()
+        Dim keypressed As Integer
+        keypressed = Console.ReadLine
+
+        Select Case keyPressed
+            Case 1 To 10
+                Console.WriteLine("Number")
+            Case "A" To "Z", "a" To "z"
+                Console.WriteLine("Letter")
+            Case "+", "-", "*", "/"
+                Console.WriteLine("Operator")
+            Case Else
+                Console.WriteLine("Special character")
+        End Select
+
+    End Sub
 End Module
